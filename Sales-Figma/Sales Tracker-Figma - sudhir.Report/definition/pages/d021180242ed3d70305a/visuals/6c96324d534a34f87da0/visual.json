@@ -16,23 +16,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "financials"
-                        }
-                      },
-                      "Property": "Units Sold"
+                    "SourceRef": {
+                      "Entity": "financials"
                     }
                   },
-                  "Function": 0
+                  "Property": "Total Unit Sold"
                 }
               },
-              "queryRef": "Sum(financials.Units Sold)",
-              "nativeQueryRef": "Units Sold",
-              "displayName": "Units Sold"
+              "queryRef": "financials.Total Unit Sold",
+              "nativeQueryRef": "Total Unit Sold"
             }
           ]
         }
@@ -41,18 +35,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "financials"
-                      }
-                    },
-                    "Property": "Units Sold"
+                  "SourceRef": {
+                    "Entity": "financials"
                   }
                 },
-                "Function": 0
+                "Property": "Total Unit Sold"
               }
             },
             "direction": "Descending"

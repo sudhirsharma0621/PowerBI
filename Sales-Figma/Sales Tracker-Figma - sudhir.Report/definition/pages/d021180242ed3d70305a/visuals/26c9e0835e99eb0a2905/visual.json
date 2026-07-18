@@ -16,23 +16,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "financials"
-                        }
-                      },
-                      "Property": "Sales"
+                    "SourceRef": {
+                      "Entity": "financials"
                     }
                   },
-                  "Function": 0
+                  "Property": "Total Sales"
                 }
               },
-              "queryRef": "Sum(financials.Sales)",
-              "nativeQueryRef": "Sales",
-              "displayName": "Sales"
+              "queryRef": "financials.Total Sales",
+              "nativeQueryRef": "Total Sales"
             }
           ]
         }
@@ -41,18 +35,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "financials"
-                      }
-                    },
-                    "Property": "Sales"
+                  "SourceRef": {
+                    "Entity": "financials"
                   }
                 },
-                "Function": 0
+                "Property": "Total Sales"
               }
             },
             "direction": "Descending"
