@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Sales Tracker-Figma - sudhir"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "218ead8d-801c-49fd-84bb-b1b3e7221904"
+  }
+}
